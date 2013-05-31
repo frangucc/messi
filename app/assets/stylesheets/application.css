@@ -14,12 +14,26 @@
  *= require_self
 */
 
+body {
+    font-family: Georgia;
+}
+
+h2, .h2 {
+    font-size: 40pt;
+    font-family: Arial;
+    margin-bottom: 0.25em;
+}
+h3, .h3 {
+    font-size: 18pt;
+}
+
 
 #topbar {
     background: url(ui/topbar-bg.png) repeat-x;
     height:40px;
     line-height: 40px;
     color: #fff;
+    font-family: Arial;
 }
 nav#top-nav ul li {
     display: inline-block;
@@ -32,7 +46,7 @@ nav#top-nav ul li#logo {
 }
 
 .big-row {
-    height: 366px;
+    
     min-width: 480px;
     background-size: cover;
     background-position: top center;
@@ -56,11 +70,73 @@ nav#top-nav ul li#logo {
     color: #fff;
 }
 
+.bordered {
+    border: 5px solid #eaeaea;
+}
+
+.button {
+    background: url(ui/button-bg.jpg) repeat-x center;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 4px;
+    padding: 0 30px 0 30px;
+    display: inline-block;
+    color: #000;
+    font-family: Arial;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.abs-bottom {
+    position:absolute;
+    bottom:0;
+}
+
+.high {
+    height: 250px;
+}
+
+#about {
+    background-image: url(ui/about-bg.jpg);
+}
+
+.large-height-auto {
+    height: auto !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+.s-limit {
+    margin-bottom: 10px;
+}
+.m-limit {
+    margin-bottom: 20px;
+}
+.b-limit {
+    margin-bottom: 40px;
+}
+
 
 @media only screen and (max-width: 48em) { 
 
     .small-height-auto {
 	height: auto !important;
     }
+    
+h2, .h2 {
+    font-size: 26pt;
+    font-family: Arial;
+    margin-bottom: 0.25em;
+}
+h3, .h3 {
+    font-size: 11pt;
+}    
 
 }
