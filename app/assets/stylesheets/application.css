@@ -47,6 +47,28 @@ nav#top-nav ul li#logo {
     background: url(ui/top-logo.png) no-repeat center;
     width: 160px;
 }
+ul.nav-dropdown {
+    position: absolute;
+    border: 2px solid #121212;
+    box-shadow: 0 0 30px #000;
+    z-index: 100;
+    padding: 0px;
+    min-width: 150px;
+    display: none;
+}
+ul.nav-dropdown li {
+    display: block !important;
+    margin-left: 0 !important;
+    background: #1f1f1f;
+    padding-left: 20px;
+    border-bottom: 1px solid #121212;
+}
+.ul.nav-dropdown li:hover {
+    background: #121212;
+}
+.dropdown-parent:hover .nav-dropdown {
+    display: inherit !important;
+}
 
 .big-row {
     
@@ -115,6 +137,9 @@ nav#top-nav ul li#logo {
 .bg-cover {
     background-size: cover;
     background-position: center;
+}
+.text-red {
+    color: #bb2031;
 }
 
 .s-limit {
