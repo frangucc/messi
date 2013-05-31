@@ -22,9 +22,11 @@ h2, .h2 {
     font-size: 40pt;
     font-family: Arial;
     margin-bottom: 0.25em;
+    line-height: 1em;
 }
 h3, .h3 {
     font-size: 18pt;
+    line-height: 1.5em;
 }
 
 
@@ -52,6 +54,7 @@ nav#top-nav ul li#logo {
     background-position: top center;
     background-repeat: no-repeat;
     padding: 40px 0 40px 0;
+    position: relative;
 }
 
 #two-options {
@@ -88,9 +91,9 @@ nav#top-nav ul li#logo {
     cursor: pointer;
 }
 
-.abs-bottom {
-    position:absolute;
-    bottom:0;
+
+.pos-rel {
+    position:relative;
 }
 
 .high {
@@ -138,5 +141,10 @@ h2, .h2 {
 h3, .h3 {
     font-size: 11pt;
 }    
+
+.small-abs-btm {
+    position:absolute;
+    bottom:0;
+}
 
 }
