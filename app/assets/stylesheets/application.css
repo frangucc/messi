@@ -7,7 +7,60 @@
  *
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
- *
+ * 
+ *= require_tree 
+ *= require_reset 
+ *= require_foundation
  *= require_self
- *= require_tree .
- */
+*/
+
+
+#topbar {
+    background: url(ui/topbar-bg.png) repeat-x;
+    height:40px;
+    line-height: 40px;
+    color: #fff;
+}
+nav#top-nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav#top-nav ul li#logo {
+    background: url(ui/top-logo.png) no-repeat center;
+    width: 160px;
+}
+
+.big-row {
+    height: 366px;
+    min-width: 480px;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 40px 0 40px 0;
+}
+
+#two-options {
+    background-image: url(ui/choose-bg.jpg);    
+    color: #fff;
+}
+
+#big-logo {
+    height: 306px;
+    background: url(ui/big-logo.png) no-repeat center;
+    background-size: contain;
+}
+
+#trainer {
+    background-image: url(ui/trainer-bg.jpg);
+    color: #fff;
+}
+
+
+@media only screen and (max-width: 48em) { 
+
+    .small-height-auto {
+	height: auto !important;
+    }
+
+}
