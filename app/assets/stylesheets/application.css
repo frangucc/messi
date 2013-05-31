@@ -36,10 +36,11 @@ h3, .h3 {
     line-height: 40px;
     color: #fff;
     font-family: Arial;
+    min-width: 480px;
 }
 nav#top-nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 nav#top-nav ul li#logo {
@@ -137,6 +138,7 @@ h2, .h2 {
     font-size: 26pt;
     font-family: Arial;
     margin-bottom: 0.25em;
+    margin-top: 0.25em;
 }
 h3, .h3 {
     font-size: 11pt;
